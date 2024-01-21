@@ -56,3 +56,8 @@ jobs:
         with:
           solutionPath: ./DotnetTemplate.sln
         continue-on-error: true
+      - name: Drop Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: drop
+          path: publish
